@@ -12,10 +12,20 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var myTabBarCtr: MyTabBarController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // window初期のお決まり
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        // root(初期画面)をオリジナルTabBarControllerに設定
+        self.myTabBarCtr = MyTabBarController()
+        self.window?.rootViewController = self.myTabBarCtr!
+        // 表示
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

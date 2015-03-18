@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Kg6-2a-eT8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tRD-K5-Vv9">
+            <objects>
+                <viewController id="0l8-oO-qtX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wlE-B0-cRM"/>
+                        <viewControllerLayoutGuide type="bottom" id="aWf-ed-ajC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tmp-U7-any">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Others" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wrd-j7-qh9">
+                                <rect key="frame" x="274.5" y="289.5" width="51.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Wrd-j7-qh9" secondAttribute="centerY" id="1PH-AW-wZC"/>
+                            <constraint firstAttribute="centerX" secondItem="Wrd-j7-qh9" secondAttribute="centerX" id="CVA-U3-aGp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pKg-gW-aJb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpS-ca-WXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="325"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="mcf-G3-LCj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kg6-2a-eT8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="3wx-mh-BlN"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZBG-1D-fxf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0l8-oO-qtX" kind="relationship" relationship="rootViewController" id="vLm-Hg-Xuc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCA-jd-8uw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="368" y="325"/>
+        </scene>
+    </scenes>
+</document>
