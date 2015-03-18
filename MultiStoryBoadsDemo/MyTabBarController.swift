@@ -7,7 +7,7 @@
 //
 //  storyboad分割用にUITabBarControllerをカスタム
 //  ここがrootになる。一番初めに表示するタブはinfo.plistの「Main storyboard file base name」で設定
-//
+//っっっっっｋ
 
 import UIKit
 
