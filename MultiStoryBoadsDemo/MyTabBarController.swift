@@ -5,6 +5,9 @@
 //  Created by atsushi otsubo on 2015/03/19.
 //  Copyright (c) 2015年 atsushi otsubo. All rights reserved.
 //
+//  storyboad分割用にUITabBarControllerをカスタム
+//  ここがrootになる。一番初めに表示するタブはinfo.plistの「Main storyboard file base name」で設定
+//
 
 import UIKit
 
