@@ -22,8 +22,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="new commit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxW-sU-AmS">
-                                <rect key="frame" x="279" y="385" width="94" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="new commit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxW-sU-AmS">
+                                <rect key="frame" x="253" y="361" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -31,7 +31,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="gxW-sU-AmS" firstAttribute="top" secondItem="Y9T-17-FmJ" secondAttribute="bottom" constant="50" id="Noc-ef-fc1"/>
                             <constraint firstAttribute="centerY" secondItem="Y9T-17-FmJ" secondAttribute="centerY" id="RZp-Xp-4To"/>
+                            <constraint firstAttribute="centerX" secondItem="gxW-sU-AmS" secondAttribute="centerX" id="SXw-G4-Noz"/>
                             <constraint firstAttribute="centerX" secondItem="Y9T-17-FmJ" secondAttribute="centerX" id="sUL-HA-OUM"/>
                         </constraints>
                     </view>
@@ -39,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpS-ca-WXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1180" y="325"/>
+            <point key="canvasLocation" x="1173" y="397"/>
         </scene>
         <!--Item-->
         <scene sceneID="mcf-G3-LCj">
