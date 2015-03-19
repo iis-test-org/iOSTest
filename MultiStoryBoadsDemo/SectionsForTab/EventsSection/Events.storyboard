@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Kg6-2a-eT8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Kg6-2a-eT8">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Events View Controller-->
@@ -99,17 +99,58 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbt-PZ-clu">
+                                <rect key="frame" x="277" y="360" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="E8t-Zs-NIy" kind="show" id="tOL-zQ-7C3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="ERm-E6-KE1" secondAttribute="centerX" constant="-5.5" id="BZw-4d-zEc"/>
                             <constraint firstAttribute="centerY" secondItem="ERm-E6-KE1" secondAttribute="centerY" id="Er9-6t-wim"/>
+                            <constraint firstItem="Wbt-PZ-clu" firstAttribute="top" secondItem="ERm-E6-KE1" secondAttribute="bottom" constant="50" id="hxL-m5-GRL"/>
+                            <constraint firstAttribute="centerX" secondItem="Wbt-PZ-clu" secondAttribute="centerX" id="pvh-nI-SQc"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LDT-BS-XiQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2532" y="325"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="63f-CL-GGy">
+            <objects>
+                <viewController id="E8t-Zs-NIy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0jz-xP-n2U"/>
+                        <viewControllerLayoutGuide type="bottom" id="LFe-6V-BI1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l8L-GT-Iha">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dD0-6a-Kda">
+                                <rect key="frame" x="274" y="290" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="dD0-6a-Kda" secondAttribute="centerX" id="NLF-Uv-eUW"/>
+                            <constraint firstAttribute="centerY" secondItem="dD0-6a-Kda" secondAttribute="centerY" id="tuv-Yl-9oE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QNG-0j-xYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3205" y="325"/>
         </scene>
         <!--Item-->
         <scene sceneID="mcf-G3-LCj">
