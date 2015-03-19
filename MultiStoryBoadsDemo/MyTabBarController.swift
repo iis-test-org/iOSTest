@@ -16,28 +16,7 @@ class MyTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //make URL of google feed api
-        var urlString = "http://localhost:3000/json"
-        var url = NSURL(string: urlString)
         
-        //download by NSSession
-        var task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler:{data, response, error in
-            //convert json data to dictionary
-            var error: NSError?
-            
-            var dict = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &error) as NSArray
-            
-            var hoge = dict[0]["EVENT"] as NSDictionary
-            
-            println(hoge)
-            println(hoge["category"]!)
-            println(hoge["description"]!)
-            println(hoge["organizer"]!)
-            println(hoge["title"]!)
-            println(hoge["sub_place"]!)
-        })
-        
-        task.resume()
         
 
         // Do any additional setup after loading the view.
