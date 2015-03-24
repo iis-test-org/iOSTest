@@ -5,6 +5,7 @@
 //  Created by atsushi otsubo on 2015/03/19.
 //  Copyright (c) 2015年 atsushi otsubo. All rights reserved.
 //
+// mdwojdmwdjwiodjowjdioqwiduhiwujdqjh
 
 import UIKit
 
